@@ -6,6 +6,7 @@ spring:
     config:
       server:
         git:
+          default-label: eureka
           uri: https://github.com/ndourcodeur/config-server
   application:
     name: config-server
