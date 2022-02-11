@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          default-label: multiple-instances
+          #default-label: multiple-instances
           uri: https://github.com/ndourcodeur/config-server
   application:
     name: config-server
