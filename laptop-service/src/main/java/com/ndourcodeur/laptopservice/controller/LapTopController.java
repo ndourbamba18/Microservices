@@ -51,7 +51,7 @@ public class LapTopController {
     public ResponseEntity<?> fetchAllLapTops(){
         List<Laptop> laptops = lapTopService.findAllLapTops();
         if (laptops.isEmpty())
-            return new ResponseEntity<>(new Message("Sorry, No Content Here!"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Message("Sorry, No Almost Content!"), HttpStatus.BAD_REQUEST);
         return new ResponseEntity<>(laptops, HttpStatus.OK);
     }
 
@@ -85,7 +85,7 @@ public class LapTopController {
     public ResponseEntity<?> fetchAllLapTopsByUserId(@PathVariable Long userId){
         List<Laptop> laptops = lapTopService.findByUserId(userId);
         if (laptops.isEmpty())
-            return new ResponseEntity<>(new Message("Sorry, No Content Almost!"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Message("Sorry, No Almost Content!"), HttpStatus.BAD_REQUEST);
         return new ResponseEntity<>(laptops, HttpStatus.OK);
     }
 
